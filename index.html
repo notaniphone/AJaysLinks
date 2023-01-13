@@ -1,44 +1,51 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>AJays Social Media Links</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-  body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  h1 {
-    margin-top: 50px;
-    font-size: 2em;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    text-align: center;
-  }
-  li {
-    display: inline-block;
-    margin: 10px;
-  }
-  a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-  }
-  a:hover {
-    background-color: #333;
-    color: #f0f0f0;
-    border-color: #f0f0f0;
-  }
-</style>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 50px;
+        font-size: 2em;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        margin: 10px;
+      }
+      a {
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover {
+        background-color: #333;
+        color: #f0f0f0;
+        border-color: #f0f0f0;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 50%;
+      }
+    </style>
   </head>
   <body>
     <h1>AJays Social Media Links</h1>
@@ -47,24 +54,28 @@
       <li><a href="https://www.facebook.com/austin.johnson.5036">Facebook</a></li>
       <li><a href="https://www.instagram.com/recklessfool/">Instagram</a></li>
     </ul>
-  <script>
-  // Get all the links on the page
-  const links = document.querySelectorAll("a");
-
-  // Add a click event listener to each link
-  links.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      // Prevent the default link behavior
-      event.preventDefault();
-
-      // Get the href of the link
-      const href = link.getAttribute("href");
-
-      // Open the link in a new tab
-      window.open(href, "_blank");
-    });
-  });
-</script>
-
-  </body>
-</html>
+	<style> 
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  margin-top: 30px; /* Add this line */
+  } 
+  .snapchat-img {
+    margin-top: 20px; /* add margin-top to create space between image and link boxes */
+  }
+</style>
+    <img class="center" src="https://i.imgur.com/KC1pbJV.png" alt="Snapchat">
+    <script>
+      // Get all the links on the page
+      const links = document.querySelectorAll("a");
+  
+      // Add a click event listener to each link
+      links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          // Prevent the default link behavior
+          event.preventDefault();
+          // Get the href of the link
+          const
